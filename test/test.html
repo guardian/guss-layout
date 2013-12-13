@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Guss Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="test.css" type="text/css" />
+</head>
+<body>
+<h1>Rows &amp; Columns</h1>
+<p>A container contains a collection of items that can be stacked horizontally or vertically (no Tetris). An item is a simple, dumb unit that takes all the space it was given to grow in.</p>
+<h2 id="2">Columns</h2>
+<p>Fits as many equally wide columns of at least 220px (3 columns on the grid) as possible in the space it is given. Distributes the number of items intelligently across columns. Naturally responsive: can be put in any context.</p>
+<h3>Full width:</h3>
+<ul class="unstyled linkslist u-columns">
+    <li class="linkslist__item u-columns__item"><a href="abc" class="linkslist__action">1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, beatae.</a></li>
+    <li class="linkslist__item u-columns__item"><a href="abc" class="linkslist__action">2 Ab, repellat ad rem maxime amet id pariatur omnis accusamus.</a></li>
+    <li class="linkslist__item u-columns__item"><a href="abc" class="linkslist__action">3 Excepturi natus voluptatem mollitia omnis consequuntur ea animi itaque aliquid.</a></li>
+    <li class="linkslist__item u-columns__item"><a href="abc" class="linkslist__action">4 Sit, facilis aut porro nisi ab voluptates omnis reiciendis laboriosam!</a></li>
+    <li class="linkslist__item u-columns__item"><a href="abc" class="linkslist__action">5 In, ipsam, est ducimus expedita atque perspiciatis incidunt a quis.</a></li>
+    <li class="linkslist__item u-columns__item"><a href="abc" class="linkslist__action">6 Quidem, repellendus ipsa quam dolor. Sapiente, rem repellat consectetur provident.</a></li>
+    <li class="linkslist__item u-columns__item"><a href="abc" class="linkslist__action">7 Quam, alias perspiciatis iusto quia molestias animi nobis exercitationem quisquam.</a></li>
+    <li class="linkslist__item u-columns__item"><a href="abc" class="linkslist__action">8 Saepe, repudiandae, illum odio labore ea provident corporis ratione ipsum?</a></li>
+    <li class="linkslist__item u-columns__item"><a href="abc" class="linkslist__action">9 Quibusdam, voluptate, corporis ab est dolorem cupiditate eos enim qui.</a></li>
+    <li class="linkslist__item u-columns__item"><a href="abc" class="linkslist__action">10 Ea, quae adipisci sapiente quod vero error quasi? Sapiente, itaque.</a></li>
+    <li class="linkslist__item u-columns__item"><a href="abc" class="linkslist__action">11 Id, minus in expedita corporis incidunt quae illum quia dicta!</a></li>
+    <li class="linkslist__item u-columns__item"><a href="abc" class="linkslist__action">12 Mollitia, illo consequatur esse harum deleniti.</a></li>
+</ul>
+<h4>Code</h4>
+<code><pre>
+&lt;div class=&quot;u-columns&quot;&gt;
+    &lt;div class=&quot;u-columns__item&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;u-columns__item&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;u-columns__item&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;u-columns__item&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre></code>
+
+<br />
+<br />
+<h3>In a 500px wide container:</h3>
+<div style="max-width: 500px">
+    <ul class="linkslist u-columns">
+        <li class="linkslist__item u-columns__item"><a href="abc" class="linkslist__action">1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, beatae.</a></li>
+        <li class="linkslist__item u-columns__item"><a href="abc" class="linkslist__action">2 Ab, repellat ad rem maxime amet id pariatur omnis accusamus.</a></li>
+        <li class="linkslist__item u-columns__item"><a href="abc" class="linkslist__action">3 Excepturi natus voluptatem mollitia omnis consequuntur ea animi itaque aliquid.</a></li>
+        <li class="linkslist__item u-columns__item"><a href="abc" class="linkslist__action">4 Sit, facilis aut porro nisi ab voluptates omnis reiciendis laboriosam!</a></li>
+        <li class="linkslist__item u-columns__item"><a href="abc" class="linkslist__action">5 In, ipsam, est ducimus expedita atque perspiciatis incidunt a quis.</a></li>
+        <li class="linkslist__item u-columns__item"><a href="abc" class="linkslist__action">6 Quidem, repellendus ipsa quam dolor. Sapiente, rem repellat consectetur provident.</a></li>
+        <li class="linkslist__item u-columns__item"><a href="abc" class="linkslist__action">7 Quam, alias perspiciatis iusto quia molestias animi nobis exercitationem quisquam.</a></li>
+        <li class="linkslist__item u-columns__item"><a href="abc" class="linkslist__action">8 Saepe, repudiandae, illum odio labore ea provident corporis ratione ipsum?</a></li>
+        <li class="linkslist__item u-columns__item"><a href="abc" class="linkslist__action">9 Quibusdam, voluptate, corporis ab est dolorem cupiditate eos enim qui.</a></li>
+        <li class="linkslist__item u-columns__item"><a href="abc" class="linkslist__action">10 Ea, quae adipisci sapiente quod vero error quasi? Sapiente, itaque.</a></li>
+        <li class="linkslist__item u-columns__item"><a href="abc" class="linkslist__action">11 Id, minus in expedita corporis incidunt quae illum quia dicta!</a></li>
+        <li class="linkslist__item u-columns__item"><a href="abc" class="linkslist__action">12 Mollitia, illo consequatur esse harum deleniti.</a></li>
+    </ul>
+</div>
+<br />
+<br />
+<p>Works also with some text:</p>
+<div class="u-columns"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, ad animi deleniti nostrum dolorum inventore fugiat magnam dolor. Accusantium, totam, aliquid doloremque magnam hic explicabo obcaecati eos voluptatibus perspiciatis aperiam quod iure labore quae officiis officia dignissimos dicta sit quidem asperiores incidunt quam. Odit consequatur accusantium ad ex commodi ea! Fugit, odit, veritatis, quam tempora ut cum nisi laudantium consequuntur pariatur eligendi asperiores dicta velit iste quis repellendus aliquid fuga magni tempore voluptas molestiae nesciunt optio debitis quo provident dignissimos non magnam iure. Sapiente, ipsum, a esse architecto vero exercitationem molestias nulla nihil ea nemo ad quas amet nobis aspernatur!</p></div>
+<h4>Code</h4>
+<code><pre>
+&lt;div class=&quot;u-columns&quot;&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit…&lt;/p&gt;
+&lt;/div&gt;
+</pre></code>
+
+<br />
+<br />
+
+<h2 id="2">Rows</h2>
+<p>A row is a list of 2 to 4 variable height units that are stacked by nature, and horizontally aligned on wider breakpoints. An item can vary in width: the higher the coefficient, the more space it will take compared to its siblings.</p>
+<p>The highest item defines the height of a row.</p>
+
+<h4>Code</h4>
+<code><pre>
+&lt;div class="u-row"&gt;
+    &lt;div class="u-row__item"&gt;&lt;/div&gt;
+    &lt;div class="u-row__item"&gt;&lt;/div&gt;
+    …
+&lt;/div&gt;
+</pre></code>
+
+<h3>2 items</h3>
+<ul class="u-row unstyled">
+    <li class="u-row__item">
+        Libero, commodi esse beatae cumque adipisci officiis quae mollitia maxime a quia? Quam, perspiciatis quis delectus tempore repellendus laudantium aliquam eos doloremque.
+    </li>
+    <li class="u-row__item">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, commodi esse beatae cumque adipisci officiis quae mollitia maxime a quia?
+    </li>
+</ul>
+<ul class="u-row unstyled">
+    <li class="u-row__item u-row__item--boost-1">
+        <strong>Boost: 1</strong>. Libero, commodi esse beatae cumque adipisci officiis quae mollitia maxime a quia? Quam, perspiciatis quis delectus tempore repellendus laudantium aliquam eos doloremque.
+    </li>
+    <li class="u-row__item">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, commodi esse beatae cumque adipisci officiis quae mollitia maxime a quia?
+    </li>
+</ul>
+<ul class="u-row unstyled">
+    <li class="u-row__item u-row__item--boost-2">
+        <strong>Boost: 2</strong>. Libero, commodi esse beatae cumque adipisci officiis quae mollitia maxime a quia? Quam, perspiciatis quis delectus tempore repellendus laudantium aliquam eos doloremque.
+    </li>
+    <li class="u-row__item">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, commodi esse beatae cumque adipisci officiis quae mollitia maxime a quia?
+    </li>
+</ul>
+<h3>3 items</h3>
+<ul class="u-row unstyled">
+    <li class="u-row__item">
+        Libero, commodi esse beatae cumque adipisci officiis quae mollitia maxime a quia? Quam, perspiciatis quis delectus tempore repellendus laudantium aliquam eos doloremque.
+    </li>
+    <li class="u-row__item">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, commodi esse beatae cumque adipisci officiis quae mollitia maxime a quia?
+    </li>
+    <li class="u-row__item">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, commodi esse beatae cumque adipisci officiis quae mollitia maxime a quia? Quam, perspiciatis quis delectus tempore repellendus laudantium aliquam eos doloremque.
+    </li>
+</ul>
+<ul class="u-row unstyled">
+    <li class="u-row__item u-row__item--boost-1">
+        <strong>Boost: 1</strong>. Libero, commodi esse beatae cumque adipisci officiis quae mollitia maxime a quia? Quam, perspiciatis quis delectus tempore repellendus laudantium aliquam eos doloremque.
+    </li>
+    <li class="u-row__item">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, commodi esse beatae cumque adipisci officiis quae mollitia maxime a quia?
+    </li>
+    <li class="u-row__item">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, commodi esse beatae cumque adipisci officiis quae mollitia maxime a quia? Quam, perspiciatis quis delectus tempore repellendus laudantium aliquam eos doloremque.
+    </li>
+</ul>
+<ul class="u-row unstyled">
+    <li class="u-row__item u-row__item--boost-2">
+        <strong>Boost: 2</strong>. Libero, commodi esse beatae cumque adipisci officiis quae mollitia maxime a quia? Quam, perspiciatis quis delectus tempore repellendus laudantium aliquam eos doloremque.
+    </li>
+    <li class="u-row__item">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, commodi esse beatae cumque adipisci officiis quae mollitia maxime a quia?
+    </li>
+    <li class="u-row__item">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, commodi esse beatae cumque adipisci officiis quae mollitia maxime a quia? Quam, perspiciatis quis delectus tempore repellendus laudantium aliquam eos doloremque.
+    </li>
+</ul>
+<h3>4 items</h3>
+<ul class="u-row unstyled">
+    <li class="u-row__item">
+        Lorem ipsum dolor sit amet. Adipisci officiis quae mollitia maxime a quia? Quam, perspiciatis quis delectus tempore repellendus laudantium aliquam eos doloremque.
+    </li>
+    <li class="u-row__item">
+        Perspiciatis quis delectus tempore repellendus laudantium aliquam eos doloremque. Lorem ipsum dolor sit amet.
+    </li>
+    <li class="u-row__item">
+        Quam, perspiciatis quis delectus tempore repellendus laudantium aliquam eos doloremque.
+    </li>
+    <li class="u-row__item">
+        Consectetur adipisicing elit. Libero, laudantium aliquam eos doloremque.
+    </li>
+</ul>
+</body>
+</html>

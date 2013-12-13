@@ -1,0 +1,19 @@
+.u-columns {
+    -webkit-column-width: gs-span(3);
+    -webkit-column-rule: 1px solid $c-neutral5;
+    -webkit-column-gap: $gs-gutter;
+
+    -moz-column-width: gs-span(3);
+    -moz-column-rule: 1px solid $c-neutral5;
+    -moz-column-gap: $gs-gutter;
+
+    column-width: gs-span(3);
+    column-rule: 1px solid $c-neutral5;
+    column-gap: $gs-gutter;
+
+    @at-root #{&}__item {
+        -webkit-column-break-inside: avoid;
+           -moz-column-break-inside: avoid;
+                column-break-inside: avoid;
+    }
+}

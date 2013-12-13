@@ -1,0 +1,14 @@
+{
+  "name": "guss-layout",
+  "version": "1.0.0",
+  "main": "_layout.scss",
+  "ignore": [
+    "CHANGELOG.md",
+    "test.html"
+  ],
+  "dependencies": {
+    "guss-rem": "~1.0.0",
+    "guss-css3": "~1.0.0",
+    "guss-grid-system": "~1.0.0"
+  }
+}
