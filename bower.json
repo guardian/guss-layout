@@ -6,8 +6,7 @@
     "_columns.scss"
   ],
   "ignore": [
-    "CHANGELOG.md",
-    "test"
+    "CHANGELOG.md"
   ],
   "dependencies": {
     "guss-rem": "~1.0.0",
