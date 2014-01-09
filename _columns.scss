@@ -100,21 +100,22 @@ $guss-columns-fallback-columns: 3 !default;
                 margin-left: $column-gap / 2,
                 margin-right: $column-gap / 2
             ));
-
-            &:nth-child(n+1):before {
-                content: '';
-                position: absolute;
-                top: 0;
-                @include rem((
-                    left: $column-gap / 2 * -1
-                ));
-                bottom: 0;
-                height: 100%;
-                width: 1px;
-                background: nth($column-rule, 3);
-            }
-            &:nth-child(#{$columns-fallback-columns}n+1):before {
-                display: none;
+            @if $column-rule != none {
+                &:nth-child(n+1):before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    @include rem((
+                        left: $column-gap / 2 * -1
+                    ));
+                    bottom: 0;
+                    height: 100%;
+                    width: 1px;
+                    background: nth($column-rule, 3);
+                }
+                &:nth-child(#{$columns-fallback-columns}n+1):before {
+                    display: none;
+                }
             }
         }
     }
