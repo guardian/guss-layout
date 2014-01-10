@@ -1,3 +1,9 @@
+## 1.0.2 (2014-01-10)
+
+- Cross browser bug fixes
+- Flexible box model is triggerred starting on tablet
+
+
 ## 1.0.1 (2014-01-09)
 
 Various cross-browser fixes:
