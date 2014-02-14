@@ -1,3 +1,7 @@
+## 1.0.3 (2014-02-14)
+
+- Columns container is flexible - #1
+
 ## 1.0.2 (2014-01-10)
 
 - Cross browser bug fixes
