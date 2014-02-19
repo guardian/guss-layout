@@ -1,3 +1,7 @@
+## 1.0.4 (2014-02-19)
+
+- Fix a reference error in README
+
 ## 1.0.3 (2014-02-14)
 
 - Columns container is flexible - #1
