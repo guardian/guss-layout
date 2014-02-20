@@ -1,3 +1,7 @@
+## 1.0.5 (2014-02-20)
+
+- Fix a bug in IE9 where hovering a link in a column would change the position of the surrounding elements
+
 ## 1.0.4 (2014-02-19)
 
 - Fix a reference error in README
