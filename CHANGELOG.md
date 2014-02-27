@@ -1,3 +1,7 @@
+## 1.1.0 (2014-02-24)
+
+- Invoke mobile layout variations using `l-row--layout-m`
+
 ## 1.0.5 (2014-02-20)
 
 - Fix a bug in IE9 where hovering a link in a column would change the position of the surrounding elements
