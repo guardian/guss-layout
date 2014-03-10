@@ -1,3 +1,8 @@
+## 1.1.1 (2014-03-10)
+
+- Fix a bug in IE10 and IE11 where hovering a link in a column would change the position of the surrounding elements
+- Better element distribution between columns
+
 ## 1.1.0 (2014-02-24)
 
 - Invoke mobile layout variations using `l-row--layout-m`
