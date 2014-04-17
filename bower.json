@@ -1,6 +1,6 @@
 {
   "name": "guss-layout",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "main": [
     "_row.scss",
     "_columns.scss"
@@ -9,9 +9,9 @@
     "CHANGELOG.md"
   ],
   "dependencies": {
-    "guss-rem": "~1.0.0",
-    "guss-css3": "~1.0.0",
-    "guss-grid-system": "~1.0.0",
-    "sass-mq": "~2.0.0"
+    "guss-rem": "~1",
+    "guss-css3": "~1",
+    "guss-grid-system": "~1",
+    "sass-mq": "~2"
   }
 }
