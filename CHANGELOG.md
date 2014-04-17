@@ -1,3 +1,7 @@
+## 1.1.2 (2014-04-17)
+
+- Loosen dependency versioning
+
 ## 1.1.1 (2014-03-10)
 
 - Fix a bug in IE10 and IE11 where hovering a link in a column would change the position of the surrounding elements
