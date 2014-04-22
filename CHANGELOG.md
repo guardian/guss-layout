@@ -1,3 +1,7 @@
+## 1.1.3 (2014-04-22)
+
+- Require newer version of guardian/guss-css3
+
 ## 1.1.2 (2014-04-17)
 
 - Loosen dependency versioning
