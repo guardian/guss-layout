@@ -1,3 +1,23 @@
+## 1.2.0 (2014-06-04)
+
+- Remove support for column rules
+- Add per-breakpoint fallbacks for columns without support for CSS3:
+
+```scss
+@include guss-columns(
+    $base-class: '.advanced-test',
+    $css3-columns-support: false, // Because buggy in some versions of WebKit
+    $columns-fallback-width: (
+        tablet: 720px,
+        desktop: 940px
+    ),
+    $columns-fallback-columns: (
+        tablet: 2,
+        desktop: 4
+    )
+);
+```
+
 ## 1.1.3 (2014-04-22)
 
 - Require newer version of guardian/guss-css3
