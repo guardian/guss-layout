@@ -1,3 +1,8 @@
+## 1.2.1 (2014-06-05)
+
+- [fix] Columns fallback break properly
+
+
 ## 1.2.0 (2014-06-04)
 
 - Remove support for column rules
