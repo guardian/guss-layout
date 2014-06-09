@@ -165,7 +165,7 @@ $guss-columns-fallback-columns: 3 !default;
                 &:nth-child(n) {
                     clear: none;
                 }
-                &:nth-child(#{$number-of-fallback-columns}n+1) {
+                &:nth-child(#{$columns-fallback-columns}n+1) {
                     clear: both;
                 }
             }
