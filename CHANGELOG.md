@@ -1,7 +1,14 @@
+## 1.2.2 (2014-06-09)
+
+Bugfix release.
+
+- [fix] Text does not overflow out of columns on mobile
+- [fix] Variable name
+- [new] Link to demos in project README
+
 ## 1.2.1 (2014-06-05)
 
 - [fix] Columns fallback break properly
-
 
 ## 1.2.0 (2014-06-04)
 
