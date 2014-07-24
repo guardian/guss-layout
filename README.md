@@ -9,8 +9,8 @@ bower install guss-layout --save
 ```
 
 ```scss
-@import "path/to/_row.scss";
-@import "path/to/_columns.scss";
+@import 'path/to/_row.scss';
+@import 'path/to/_columns.scss';
 
 // Uncomment to output utility classes
 // @include guss-row-utility;
