@@ -76,7 +76,7 @@ $guss-columns-fallback-columns: 3 !default;
  * @requires {variable} guss-columns-fallback-columns
  * @requires {variable} browser-supports-columns
  * @requires {function} width-of-fallback-column-item
- * @requires {mixin} rem
+ * @requires {function} rem
  * @requires {mixin} mq
  *
  * @link http://sassmeister.com/gist/35288593dc035ef645e1 Examples
@@ -136,10 +136,8 @@ $guss-columns-fallback-columns: 3 !default;
     }
     @if not $css3-columns-support {
         #{$base-class} {
-            @include rem((
-                margin-left: $column-gap / 2 * -1,
-                margin-right: $column-gap / 2 * -1
-            ));
+            margin-left: $column-gap / 2 * -1;
+            margin-right: $column-gap / 2 * -1;
 
             // Micro clearfix (http://nicolasgallagher.com/micro-clearfix-hack/)
             zoom: 1;
@@ -156,10 +154,8 @@ $guss-columns-fallback-columns: 3 !default;
         #{$base-class}__item {
             position: relative;
             display: block;
-            @include rem((
-                margin-left: $column-gap / 2,
-                margin-right: $column-gap / 2
-            ));
+            margin-left: $column-gap / 2;
+            margin-right: $column-gap / 2;
 
             @include mq(tablet) {
                 float: left;
@@ -185,13 +181,11 @@ $guss-columns-fallback-columns: 3 !default;
                     $number-of-fallback-columns: if(type-of($columns-fallback-columns) == map, map-get($columns-fallback-columns, $breakpoint), $columns-fallback-columns);
 
                     @include mq($breakpoint) {
-                        @include rem((
-                            width: width-of-fallback-column-item(
-                                                                    $container-width: $fallback-width,
-                                                                    $gap-between-columns: $column-gap,
-                                                                    $number-of-columns: $number-of-fallback-columns
-                                                                )
-                        ));
+                        width: width-of-fallback-column-item(
+                                    $container-width: $fallback-width,
+                                    $gap-between-columns: $column-gap,
+                                    $number-of-columns: $number-of-fallback-columns
+                                );
 
                         &:nth-child(n) {
                             clear: none;
@@ -210,13 +204,11 @@ $guss-columns-fallback-columns: 3 !default;
                 //     $columns-fallback-width: 290px,
                 //     $columns-fallback-columns: 3
                 // );
-                @include rem((
-                    width: width-of-fallback-column-item(
-                                                            $container-width: $columns-fallback-width,
-                                                            $gap-between-columns: $column-gap,
-                                                            $number-of-columns: $columns-fallback-columns
-                                                        )
-                ));
+                width: width-of-fallback-column-item(
+                            $container-width: $columns-fallback-width,
+                            $gap-between-columns: $column-gap,
+                            $number-of-columns: $columns-fallback-columns
+                        );
 
                 &:nth-child(n) {
                     clear: none;
