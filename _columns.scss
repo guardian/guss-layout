@@ -6,6 +6,8 @@
  * Minimum column width.
  * 
  * @type Number
+ *
+ * @group layout
  */
 $guss-column-min-width: 300px !default;
 
@@ -13,6 +15,8 @@ $guss-column-min-width: 300px !default;
  * Column gutter.
  * 
  * @type Number
+ *
+ * @group layout
  */
 $guss-column-gap: 20px !default;
 
@@ -20,6 +24,8 @@ $guss-column-gap: 20px !default;
  * Column utility class.
  * 
  * @type String
+ *
+ * @group layout
  */
 $guss-columns-utility-class: '.l-columns';
 
@@ -29,6 +35,8 @@ $guss-columns-utility-class: '.l-columns';
  * @link http://caniuse.com/#feat=multicolumn Column support table
  * 
  * @type Bool
+ *
+ * @group layout
  */
 $browser-supports-columns: true !default;
 
@@ -36,6 +44,8 @@ $browser-supports-columns: true !default;
  * Fallback width when CSS3 columns support is disabled.
  * 
  * @type Number
+ *
+ * @group layout
  */
 $guss-columns-fallback-width: 940px !default;
 
@@ -43,6 +53,8 @@ $guss-columns-fallback-width: 940px !default;
  * Number of columns in the non-responsive version.
  * 
  * @type Number
+ *
+ * @group layout
  */
 $guss-columns-fallback-columns: 3 !default;
 
@@ -54,13 +66,15 @@ $guss-columns-fallback-columns: 3 !default;
  * @param {Number} $number-of-columns
  *
  * @return {Number}
+ *
+ * @group layout
  */
 @function width-of-fallback-column-item($container-width, $gap-between-columns, $number-of-columns) {
     @return ($container-width - $gap-between-columns * ($number-of-columns - 1)) / $number-of-columns;
 }
 
 /**
- * A "columns pattern" will fit as many `$guss-column-min-width`-wide columns
+ * A "columns pattern" fits as many "$guss-column-min-width"-wide columns
  * in any type of context: full-width container, sidebar…
  *
  * @param {String} $base-class
@@ -79,14 +93,13 @@ $guss-columns-fallback-columns: 3 !default;
  * @requires {function} rem
  * @requires {mixin} mq
  *
- * @link http://sassmeister.com/gist/35288593dc035ef645e1 Examples
+ * @link http://sassmeister.com/gist/5c09ed0242085ba8d705 Examples on Sassmeister
  * 
- * @example scss
- *  // Sass mixin
+ * @example
+ *  // Usage 1: Sass mixin
  *  @include guss-columns('.classname');
- * 
- * @example scss
- *  // Utility class set as `$guss-columns-utility-class`
+ *
+ *  // Usage 2: utility class set as `$guss-columns-utility-class`
  *  @include guss-columns-utility;
  *
  * @example markup
@@ -99,6 +112,8 @@ $guss-columns-fallback-columns: 3 !default;
  *     <div class="l-columns__item"></div>
  *     <div class="l-columns__item"></div>
  * </div>
+ *
+ * @group layout
  */
 @mixin guss-columns($base-class,
                     $column-min-width: $guss-column-min-width,
@@ -226,6 +241,8 @@ $guss-columns-fallback-columns: 3 !default;
  *
  * @requires {mixin} guss-columns
  * @requires {variable} guss-columns-utility-class
+ *
+ * @group layout
  */
 @mixin guss-columns-utility {
     @include guss-columns($guss-columns-utility-class);

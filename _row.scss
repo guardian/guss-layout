@@ -6,6 +6,8 @@
  * Row utility class.
  * 
  * @type String
+ *
+ * @group layout
  */
 $guss-row-utility-class: '.l-row' !default;
 
@@ -15,6 +17,8 @@ $guss-row-utility-class: '.l-row' !default;
  * @link http://caniuse.com/#feat=flexbox Flexbox support table
  * 
  * @type Bool
+ *
+ * @group layout
  */
 $browser-supports-flexbox: true !default;
 
@@ -22,6 +26,8 @@ $browser-supports-flexbox: true !default;
  * Static width for older browsers.
  * 
  * @type Number
+ *
+ * @group layout
  */
 $guss-row-fallback-width: 940px !default;
 
@@ -37,7 +43,7 @@ $guss-row-fallback-width: 940px !default;
  * @requires {mixin} flex-grow
  * @requires {mixin} flex-basis
  * 
- * @link http://sassmeister.com/gist/7986076 Examples
+ * @link http://sassmeister.com/gist/9b6033675b0f01de21f0 Examples on Sassmeister
  *
  * @example scss
  *  // Sass Mixin
@@ -56,6 +62,8 @@ $guss-row-fallback-width: 940px !default;
  * </div>
  * <!-- --boost-n modifiers are used to add visual importance to an item.
  * Note that this applies only to browsers that support flexbox. -->
+ *
+ * @group layout
  */
 @mixin guss-row($base-class) {
     @if ($browser-supports-flexbox) {
@@ -163,6 +171,8 @@ $guss-row-fallback-width: 940px !default;
  *
  * @requires {variable} guss-row-utility-class
  * @requires {mixin} guss-row
+ *
+ * @group layout
  */
 @mixin guss-row-utility {
     @include guss-row($guss-row-utility-class);
