@@ -23,5 +23,5 @@ Low-level responsive layout patterns.
 
 ## Demos
 
-- Columns: http://sassmeister.com/gist/90a7bc5fd8176b51afea
-- Row pattern: http://sassmeister.com/gist/7986076
+- Columns: http://sassmeister.com/gist/5c09ed0242085ba8d705
+- Row pattern: http://sassmeister.com/gist/9b6033675b0f01de21f0
